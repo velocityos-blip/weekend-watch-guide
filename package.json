@@ -1,0 +1,16 @@
+{
+  "name": "weekend-watch-guide-community",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "workspaces": [
+    "github-source"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=weekend-watch-guide",
+    "dev": "npm run dev --workspace=weekend-watch-guide",
+    "build": "npm run build --workspace=weekend-watch-guide",
+    "test": "npm run test --workspace=weekend-watch-guide"
+  }
+}
