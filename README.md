@@ -19,11 +19,11 @@ Open [localhost:3001](http://localhost:3001) to try the guide. The [app source](
 
 ## Join the community
 
-Movie lovers, first-time contributors, and developers are welcome. Try the guide, [fork this repository](https://github.com/velocityos-blip/weekenwatchguide/fork), and help make choosing a movie or series easier.
+Movie lovers, first-time contributors, and developers are welcome. Try the guide, [fork this repository](https://github.com/velocityos-blip/weekend-watch-guide/fork), and help make choosing a movie or series easier.
 
-- **Suggest a pick** in [Discussions](https://github.com/velocityos-blip/weekenwatchguide/discussions). Include the title, year, language, and the mood it fits. Tell us why, without spoilers.
-- **Report a problem** in [Issues](https://github.com/velocityos-blip/weekenwatchguide/issues). For example, if a time filter misses the mark, share the filter, the title you saw, and what you expected. Please leave out private account details.
-- **Contribute a change** from your fork. Open a [pull request](https://github.com/velocityos-blip/weekenwatchguide/pulls) describing what you changed and how you checked it. Documentation improvements, accessibility feedback, and metadata corrections with sources are good first contributions.
+- **Suggest a pick** in [Discussions](https://github.com/velocityos-blip/weekend-watch-guide/discussions). Include the title, year, language, and the mood it fits. Tell us why, without spoilers.
+- **Report a problem** in [Issues](https://github.com/velocityos-blip/weekend-watch-guide/issues). For example, if a time filter misses the mark, share the filter, the title you saw, and what you expected. Please leave out private account details.
+- **Contribute a change** from your fork. Open a [pull request](https://github.com/velocityos-blip/weekend-watch-guide/pulls) describing what you changed and how you checked it. Documentation improvements, accessibility feedback, and metadata corrections with sources are good first contributions.
 
 ## License
 
