@@ -4,6 +4,19 @@
 
 Have half an hour and want a laugh? Choose **Laugh out loud**, **Series**, and **Up to 30 min** to get a short list of shows that fit. Browse without an account, or sign in to save picks and rate what you’ve watched. Your ratings help shape your next shortlist.
 
+## Run your own copy
+
+Install Node.js 22.13 or newer. Fork and clone the repository, then run these commands from its top-level folder. The included catalog works without API keys.
+
+```sh
+npm ci
+npm run build
+npm test
+npm start
+```
+
+Open [localhost:3001](http://localhost:3001) to try the guide. The [app source](github-source/) contains the recommendation engine, catalog, and tests. The [running and hosting guide](github-source/RUNNING.md) covers configuration and data storage.
+
 ## Join the community
 
 Movie lovers, first-time contributors, and developers are welcome. Try the guide, [fork this repository](https://github.com/velocityos-blip/weekenwatchguide/fork), and help make choosing a movie or series easier.
