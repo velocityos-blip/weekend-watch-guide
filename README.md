@@ -24,3 +24,7 @@ Movie lovers, first-time contributors, and developers are welcome. Try the guide
 - **Suggest a pick** in [Discussions](https://github.com/velocityos-blip/weekenwatchguide/discussions). Include the title, year, language, and the mood it fits. Tell us why, without spoilers.
 - **Report a problem** in [Issues](https://github.com/velocityos-blip/weekenwatchguide/issues). For example, if a time filter misses the mark, share the filter, the title you saw, and what you expected. Please leave out private account details.
 - **Contribute a change** from your fork. Open a [pull request](https://github.com/velocityos-blip/weekenwatchguide/pulls) describing what you changed and how you checked it. Documentation improvements, accessibility feedback, and metadata corrections with sources are good first contributions.
+
+## License
+
+You can fork, modify, and distribute the app, including commercially, under the [MIT License](LICENSE). Include the copyright and permission notice with copies or substantial portions of the software. Third-party movie and series metadata carry their own [licenses and attribution](github-source/public/metadata-credits.html).
