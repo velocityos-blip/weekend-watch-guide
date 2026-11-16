@@ -1,0 +1,19 @@
+{
+  "name": "weekend-watch-guide",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node --check server.js && node --check public/app.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "5.1.0"
+  },
+  "main": "server.js"
+}

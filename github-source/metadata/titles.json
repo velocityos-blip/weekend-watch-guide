@@ -1,0 +1,237 @@
+{
+  "palm-springs": {
+    "source": "Wikipedia movie dataset",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Palm_Springs_(2020_film)",
+    "cast": [
+      "Andy Samberg",
+      "Cristin Milioti",
+      "Peter Gallagher",
+      "J. K. Simmons"
+    ],
+    "sourceGenres": [
+      "Comedy",
+      "Science Fiction",
+      "Romance"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "ted-lasso": {
+    "source": "TVmaze",
+    "sourceUrl": "https://www.tvmaze.com/shows/44458",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "poster": "https://static.tvmaze.com/uploads/images/medium_portrait/634/1585930.jpg",
+    "rating": 8.1,
+    "cast": [
+      "Jason Sudeikis",
+      "Brendan Hunt",
+      "Hannah Waddingham",
+      "Jeremy Swift",
+      "Brett Goldstein",
+      "Juno Temple",
+      "Billy Harris",
+      "Kola Bokinni"
+    ],
+    "status": "To Be Determined",
+    "sourceGenres": [
+      "Drama",
+      "Comedy",
+      "Sports"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "knives-out": {
+    "source": "Wikipedia movie dataset",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Knives_Out",
+    "cast": [
+      "Daniel Craig",
+      "Chris Evans",
+      "Ana de Armas",
+      "Jamie Lee Curtis",
+      "Michael Shannon",
+      "Don Johnson",
+      "Toni Collette",
+      "Lakeith Stanfield"
+    ],
+    "sourceGenres": [
+      "Mystery"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "brooklyn": {
+    "source": "TVmaze",
+    "sourceUrl": "https://www.tvmaze.com/shows/49",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "poster": "https://static.tvmaze.com/uploads/images/medium_portrait/402/1007484.jpg",
+    "rating": 8.1,
+    "cast": [
+      "Andy Samberg",
+      "Andre Braugher",
+      "Joe Lo Truglio",
+      "Stephanie Beatriz",
+      "Terry Crews",
+      "Melissa Fumero",
+      "Joel McKinnon Miller",
+      "Dirk Blocker"
+    ],
+    "status": "Ended",
+    "sourceGenres": [
+      "Comedy",
+      "Action",
+      "Crime"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "superbad": {
+    "source": "Wikipedia movie dataset",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Superbad_(film)",
+    "cast": [
+      "Jonah Hill",
+      "Michael Cera",
+      "Christopher Mintz-Plasse",
+      "Seth Rogen",
+      "Bill Hader",
+      "Emma Stone",
+      "Martha MacIsaac",
+      "Laura Marano"
+    ],
+    "sourceGenres": [
+      "Comedy",
+      "Teen"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "the-good-place": {
+    "source": "TVmaze",
+    "sourceUrl": "https://www.tvmaze.com/shows/2790",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "poster": "https://static.tvmaze.com/uploads/images/medium_portrait/395/989291.jpg",
+    "rating": 7.6,
+    "cast": [
+      "Kristen Bell",
+      "Ted Danson",
+      "William Jackson Harper",
+      "Jameela Jamil",
+      "Manny Jacinto",
+      "D'Arcy Carden"
+    ],
+    "status": "Ended",
+    "sourceGenres": [
+      "Comedy",
+      "Fantasy",
+      "Supernatural"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "dune": {
+    "source": "Wikipedia movie dataset",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Dune_(2021_film)",
+    "cast": [
+      "Timothee Chalamet",
+      "Rebecca Ferguson",
+      "Oscar Isaac",
+      "Josh Brolin",
+      "Stellan Skarsgård",
+      "Dave Bautista",
+      "Stephen McKinley Henderson",
+      "Zendaya"
+    ],
+    "sourceGenres": [
+      "Science Fiction"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "interstellar": {
+    "source": "Wikipedia movie dataset",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Interstellar_(film)",
+    "cast": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Jessica Chastain",
+      "Bill Irwin",
+      "Ellen Burstyn",
+      "Michael Caine"
+    ],
+    "sourceGenres": [
+      "Science Fiction"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "severance": {
+    "source": "TVmaze",
+    "sourceUrl": "https://www.tvmaze.com/shows/44933",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "poster": "https://static.tvmaze.com/uploads/images/medium_portrait/548/1371406.jpg",
+    "rating": 7.7,
+    "cast": [
+      "Adam Scott",
+      "Tramell Tillman",
+      "Britt Lower",
+      "Zach Cherry",
+      "Jen Tullock",
+      "John Turturro",
+      "Patricia Arquette",
+      "Christopher Walken"
+    ],
+    "status": "Running",
+    "sourceGenres": [
+      "Drama",
+      "Science-Fiction",
+      "Mystery"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "arrival": {
+    "source": "Wikipedia movie dataset",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Arrival_(film)",
+    "cast": [
+      "Amy Adams",
+      "Jeremy Renner",
+      "Forest Whitaker",
+      "Michael Stuhlbarg",
+      "Tzi Ma"
+    ],
+    "sourceGenres": [
+      "Drama",
+      "Science Fiction"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "panchayat": {
+    "source": "TVmaze",
+    "sourceUrl": "https://www.tvmaze.com/shows/47014",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "poster": "https://static.tvmaze.com/uploads/images/medium_portrait/517/1293627.jpg",
+    "rating": null,
+    "cast": [],
+    "status": "Running",
+    "sourceGenres": [
+      "Drama",
+      "Comedy"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  },
+  "dark": {
+    "source": "TVmaze",
+    "sourceUrl": "https://www.tvmaze.com/shows/17861",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "poster": "https://static.tvmaze.com/uploads/images/medium_portrait/504/1262352.jpg",
+    "rating": 8.2,
+    "cast": [
+      "Louis Hofmann",
+      "Karoline Eichhorn",
+      "Stephan Kampwirth",
+      "Maja Schöne",
+      "Lisa Vicari",
+      "Jördis Triebel",
+      "Andreas Pietschmann",
+      "Paul Lux"
+    ],
+    "status": "Ended",
+    "sourceGenres": [
+      "Drama",
+      "Science-Fiction",
+      "Supernatural"
+    ],
+    "checkedAt": "2026-11-06T19:36:45.588Z"
+  }
+}
