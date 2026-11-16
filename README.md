@@ -4,6 +4,14 @@
 
 Have half an hour and want a laugh? Choose **Laugh out loud**, **Series**, and **Up to 30 min** to get a short list of shows that fit. Browse without an account, or sign in to save picks and rate what you’ve watched. Your ratings help shape your next shortlist.
 
+## How picks are made
+
+The [ranking function](github-source/recommend.js) first removes watched and dismissed titles, then filters the catalog by format, runtime, language, and mood. It scores the remaining titles using preferred genres, tones, and languages. Rating a title above three stars boosts other titles with similar genres and tones; a lower rating reduces their scores. Each pick comes with a short explanation. The ranking runs locally on the server without a model API.
+
+## Architecture
+
+The [browser interface](github-source/public/app.js) calls a [Node.js and Express server](github-source/server.js) that serves the site and its JSON API. The [catalog](github-source/catalog.js) supplies the titles; SQLite stores accounts, preferences, saved picks, and viewing feedback. The [test suite](github-source/test/) covers ranking, metadata, and API behavior.
+
 ## Run your own copy
 
 Install Node.js 22.13 or newer. Fork and clone the repository, then run these commands from its top-level folder. The included catalog works without API keys.
