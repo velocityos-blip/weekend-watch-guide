@@ -7,6 +7,7 @@ import {promisify} from 'node:util';
 import {isAbsolute} from 'node:path';
 import {catalog,genres,tones} from './catalog.js';
 import {recommend} from './recommend.js';
+import {searchResource} from './guides.js';
 const derive=promisify(scrypt), port=Number(process.env.PORT||3001), production=process.env.NODE_ENV==='production';
 if(production&&!process.env.APP_ORIGIN)throw new Error('APP_ORIGIN is required in production');
 if(production&&(!process.env.DATA_DIR||!isAbsolute(process.env.DATA_DIR)))throw new Error('A persistent absolute DATA_DIR outside deployment folders is required in production');
@@ -25,7 +26,7 @@ function publicUser(u){return {name:u.name,email:u.email,profile:JSON.parse(u.pr
 function history(u){return db.prepare('SELECT movie,status,rating,review,updated FROM feedback WHERE user=?').all(u.id);}
 async function body(req){let text='';for await(const part of req){text+=part;if(text.length>16000)throw new Error('Request too large');}try{return JSON.parse(text||'{}');}catch{throw new Error('Invalid request');}}
 const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png'};
-const files={'/':'index.html','/app.js':'app.js','/style.css':'style.css','/scene.svg':'scene.svg','/cinema.css':'cinema.css','/cinema-hero.png':'cinema-hero.png','/metadata-credits.html':'metadata-credits.html'};
+const files={'/guides.css':'guides.css','/':'index.html','/app.js':'app.js','/style.css':'style.css','/scene.svg':'scene.svg','/cinema.css':'cinema.css','/cinema-hero.png':'cinema-hero.png','/metadata-credits.html':'metadata-credits.html'};
 const app=express();
 app.disable('x-powered-by');
 app.use(async(req,res)=>{
@@ -36,6 +37,8 @@ app.use(async(req,res)=>{
  const url=new URL(req.url,'http://localhost'),path=url.pathname;
  if(production&&req.headers.host===`www.${new URL(process.env.APP_ORIGIN).host}`){res.writeHead(308,{Location:process.env.APP_ORIGIN+url.pathname+url.search});return res.end();}
  if(path==='/api/health'&&req.method==='GET')return json({ok:true,release:'metadata-2026-11-07'});
+ const resource=(req.method==='GET'||req.method==='HEAD')?searchResource(path,process.env.APP_ORIGIN||`http://localhost:${port}`):null;
+ if(resource){res.writeHead(200,{'Content-Type':resource.type});return res.end(req.method==='HEAD'?undefined:resource.body);}
  if(!path.startsWith('/api/')){if(!files[path]||req.method!=='GET'){res.writeHead(404);return res.end('Not found');} const f=files[path];res.writeHead(200,{'Content-Type':mime[f.slice(f.lastIndexOf('.'))]});return res.end(readFileSync(new URL(`./public/${f}`,import.meta.url)));}
  if(req.method!=='GET'&&req.headers.origin!==(process.env.APP_ORIGIN||`http://localhost:${port}`))return json({error:'Request origin rejected'},403);
  const user=session(req);
