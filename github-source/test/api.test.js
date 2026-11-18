@@ -9,6 +9,15 @@ test('accounts isolate private data, enforce origin, and retain learning across 
  const child=spawn(process.execPath,['server.js'],{env:{...process.env,PORT:String(port),DATA_DIR:dir,APP_ORIGIN:base},stdio:['ignore','pipe','pipe']});
  try {
  await new Promise((resolve,reject)=>{child.stdout.once('data',resolve);child.once('error',reject);child.once('exit',()=>reject(Error('Test server exited')));});
+ for(const path of ['/guides/','/guides/feel-good-movies','/guides/short-comedy-series','/guides/thought-provoking-science-fiction']){
+  const response=await fetch(base+path);assert.equal(response.status,200);
+  const html=await response.text();assert.ok(html.includes('<h1>'));assert.ok(html.includes('rel="canonical" href="'+base+path+'"'));
+ }
+ const sitemap=await fetch(base+'/sitemap.xml');assert.equal(sitemap.status,200);assert.match(await sitemap.text(),/<urlset/);
+ const robots=await fetch(base+'/robots.txt');assert.equal(robots.status,200);assert.ok((await robots.text()).includes(base+'/sitemap.xml'));
+ assert.equal((await fetch(base+'/guides.css')).status,200);
+ assert.equal((await fetch(base+'/guides/missing')).status,404);
+ const head=await fetch(base+'/guides/',{method:'HEAD'});assert.equal(head.status,200);assert.equal(await head.text(),'');
  const call=async(path,data,cookie='',origin=base)=>{const r=await fetch(base+'/api/'+path,{method:data?'POST':'GET',headers:{'Content-Type':'application/json',Origin:origin,Cookie:cookie},body:data?JSON.stringify(data):undefined});return {status:r.status,data:await r.json(),cookie:r.headers.get('set-cookie')?.split(';')[0]};};
  assert.equal((await call('profile',{genres:['Comedy']})).status,401);
  assert.equal((await call('signup',{name:'Test',email:'qa@example.test',password:'test-password-very-long'},'','https://wrong.test')).status,403);
